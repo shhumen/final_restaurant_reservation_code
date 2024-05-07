@@ -31,13 +31,9 @@ const FavoritesPage = () => {
     restaurants?.filter((rest: any) => rest._id === restaurant)
   )
 
-  const {
-    control,
-    reset,
-    getValues,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<IListCreate>({ resolver: zodResolver(createFavListSchema) })
+  const { control, reset, getValues } = useForm<IListCreate>({
+    resolver: zodResolver(createFavListSchema),
+  })
 
   useEffect(() => {
     if (list) {

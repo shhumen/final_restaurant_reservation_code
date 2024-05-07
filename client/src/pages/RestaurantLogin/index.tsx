@@ -2,13 +2,13 @@ import { useRegisterRestaurantMutation } from '@/redux/api/restaurants'
 import { RegisterRestaurantForm } from '@/shared/models'
 import { restaurantRegisterSchema } from '@/validations'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useState } from 'react'
+// import { useState } from 'react'
 import { Controller, useForm } from 'react-hook-form'
 
 const RestaurantLogin = () => {
-  const [values, setValues] = useState()
+  // const [values, setValues] = useState()
 
-  const [registerRestaurant] = useRegisterRestaurantMutation()
+  // const [registerRestaurant] = useRegisterRestaurantMutation()
 
   const {
     control,

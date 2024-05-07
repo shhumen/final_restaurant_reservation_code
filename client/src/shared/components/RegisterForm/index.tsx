@@ -1,11 +1,10 @@
-import { useRegisterUserMutation, useVerifyOTPMutation } from '@/redux/api/auth'
+import { useRegisterUserMutation } from '@/redux/api/auth'
 import { RegisterForm } from '@/shared/models'
 import { registerSchema } from '@/validations'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Checkbox } from 'antd'
 import React, { useState } from 'react'
 import { Controller, useForm } from 'react-hook-form'
-import { useNavigate } from 'react-router-dom'
 
 interface RegisterFormComponentProp {
   email: string | null
@@ -16,8 +15,6 @@ const RegisterFormComponent: React.FC<RegisterFormComponentProp> = ({
   email,
   verifyOTP,
 }) => {
-  const navigate = useNavigate()
-
   const [role, setRole] = useState('user')
   const [registerUser, { isSuccess: registerSuccess }] =
     useRegisterUserMutation()

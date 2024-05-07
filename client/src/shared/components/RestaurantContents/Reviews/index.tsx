@@ -1,6 +1,6 @@
 import { Flex, Progress } from 'antd'
 import IRestaurant from '../../SingleRestaurantCard/types'
-import { useGetReviewQuery, useUpdateReviewMutation } from '@/redux/api/reviews'
+import { useGetReviewQuery } from '@/redux/api/reviews'
 import { useGetUsersQuery } from '@/redux/api/users'
 import { useEffect, useState } from 'react'
 import { avatar } from '@/shared/media'

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Rate, Input, Button } from 'antd'
+import { Rate, Input } from 'antd'
 import {
   useAddReviewMutation,
   useUpdateReviewMutation,

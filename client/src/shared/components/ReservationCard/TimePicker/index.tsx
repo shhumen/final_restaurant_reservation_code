@@ -1,42 +1,4 @@
-// import { useGetPeriodTimesQuery } from '@/redux/api/restaurants'
-// import dayjs from 'dayjs'
-// import React from 'react'
-
-// interface TimePickerProps {
-//   restaurantId: string | undefined
-//   selectedTime: string
-//   setSelectedTime: Function
-// }
-
-// const TimePicker: React.FC<TimePickerProps> = ({
-//   restaurantId,
-//   selectedTime,
-//   setSelectedTime,
-// }) => {
-//   const { data: availableTimes } = useGetPeriodTimesQuery(restaurantId)
-
-//   const handleTimeChange = (time: dayjs.Dayjs | null) => {
-//     setSelectedTime(time)
-//   }
-
-//   return (
-//     <div>
-//       {availableTimes?.[0]?.periods?.map((timeslot: any) => (
-//         <>
-//           <p>{timeslot?.periodName}</p>
-//           {timeslot?.timeSlots?.map((slot: any) => (
-//             <button>{slot}</button>
-//           ))}
-//         </>
-//       ))}
-//     </div>
-//   )
-// }
-
-// export default TimePicker
-
 import { useGetPeriodTimesQuery } from '@/redux/api/restaurants'
-import dayjs from 'dayjs'
 import React from 'react'
 
 interface TimePickerProps {

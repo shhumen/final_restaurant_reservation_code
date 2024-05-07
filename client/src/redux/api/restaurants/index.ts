@@ -1,6 +1,7 @@
 import { createApi } from '@reduxjs/toolkit/query/react'
 import { APIBaseQuery } from '../axiosBase'
 import { toast } from 'sonner'
+import { setToken } from '@/redux/features/auth/authSlice'
 
 const VALIDATOR = ['Restaurant']
 

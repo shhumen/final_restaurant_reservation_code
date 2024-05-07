@@ -2,7 +2,7 @@ import {
   useGetReservationsQuery,
   useUpdateReservationMutation,
 } from '@/redux/api/reservation'
-import { useGetRestaurantQuery } from '@/redux/api/restaurants'
+// import { useGetRestaurantQuery } from '@/redux/api/restaurants'
 import { IUserProfile } from '@/shared/models'
 import React from 'react'
 import { toast } from 'sonner'

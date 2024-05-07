@@ -1,7 +1,7 @@
 import React from 'react'
 import { restaurantImg } from '@/shared/media'
 import IRestaurant from './types'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 interface SingleRestaurantCardProps {
   restaurantInfo: IRestaurant
@@ -10,8 +10,6 @@ interface SingleRestaurantCardProps {
 const SingleRestaurantCard: React.FC<SingleRestaurantCardProps> = ({
   restaurantInfo,
 }) => {
-  const location = useLocation()
-
   return (
     // <div className='singleRestaurant card col-12 col-sm-6 col-md-6 col-lg-3'>
     <Link to={`/restaurants/${restaurantInfo?._id}`}>
