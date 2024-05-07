@@ -1,0 +1,45 @@
+.fav-lists {
+  .modal-btn .create-list {
+    background-color: transparent;
+    transition: 0.2 all ease-in;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(238, 246, 245);
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+.favorites-header {
+  border-bottom: 1px dashed var(--border-color2);
+}
+
+.ant-modal-body .list-input {
+  font-size: 15px;
+  width: 80%;
+  border-bottom: 2px solid var(--border-color2) !important;
+}
+
+a:hover {
+  color: black;
+}
+.updated {
+  flex-wrap: wrap;
+  font-size: 11px;
+}
+
+.update {
+  // border: 1px solid red;
+  img {
+    width: 20px;
+  }
+}
+
+.delete img {
+  width: 20px;
+}
+
+.card {
+  flex-wrap: wrap;
+}

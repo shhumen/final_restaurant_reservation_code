@@ -1,0 +1,34 @@
+.singleRestaurant {
+  padding: 0px 10px;
+  transition: 0.2s ease-in;
+  &:hover {
+    // scale;
+    transform: scale(1.05);
+  }
+  .card {
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--white);
+    .card-img {
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .card-body {
+      .street p {
+        font-size: 14px;
+      }
+      .rating {
+        height: 25px;
+        color: var(--card-color);
+        padding: 0 8px;
+        font-size: 12px;
+      }
+    }
+    .card-footer p {
+      font-size: 14px;
+    }
+  }
+}

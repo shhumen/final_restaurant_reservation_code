@@ -1,0 +1,27 @@
+$base-size: 1rem;
+$base-size-xs: 0.625rem;
+$base-size-sm: 0.75rem;
+$base-size-md: 0.875rem;
+
+$primary-color: #004225;
+
+:root {
+  --primary-background-body: #f6f6f6;
+  --primary-color: rgb(0, 102, 92);
+  --secondary-color: #007a6c;
+  --secondary-color-two: #92b3af;
+  --secondary-color-three: #0b1739;
+  --card-color: #fff;
+  --header-bg-color: #fcfcfc;
+  --card-text-color: #000;
+  --primary-text-color: #081028;
+  --light-color: #000;
+  --table-bg-color: #f4f4f5;
+  --logo-color: #000;
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --table-border-color: #343b4f;
+  --menu-selected-color: #c4b3f0;
+  --white: #fff;
+  --border-color: rgb(236, 237, 239);
+  --border-color2: rgb(188, 189, 190);
+}

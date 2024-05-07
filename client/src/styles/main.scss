@@ -1,0 +1,225 @@
+@import 'mixins';
+@import 'variables';
+@import '@/shared/layout/Header/style.scss';
+// @import '@/pages/SingleRestaurant/style.scss';
+@import '@/pages/Home/Cuisines/style.scss';
+@import '@/pages/Home/BestDeals/style.scss';
+@import '@/pages/Home/Services/style.scss';
+@import '@/pages/Login/style.scss';
+@import '@/pages/SingleRestaurant/style.scss';
+@import '@/shared/components/Banner/style.scss';
+@import '@/shared/components/Select/style.scss';
+@import '@/shared/components/LoginForm/style.scss';
+@import '@/shared/components/Contents/PersonalInfo/style.scss';
+@import '@/shared/components/Contents/Favorites/style.scss';
+@import '@/shared/components/Contents/Favorites/List/style.scss';
+@import '@/shared/components/Contents/ReviewsUser/style.scss';
+@import '@/shared/components/Card/style.scss';
+@import '@/shared/components/Breadcrumb/style.scss';
+@import '@/shared/components/ActionButtons/style.scss';
+@import '@/shared/components/Modal/style.scss';
+@import '../shared/components/Silder/style.scss';
+@import '../shared/components/ReservationCard/style.scss';
+@import '../shared/components/Profile/style.scss';
+@import '@/shared/components/SingleRestaurantCard/style.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+body {
+  background-color: var(--primary-background-body) !important;
+}
+
+header {
+  background-color: var(--white);
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.toaster li {
+  padding: 20px 15px !important;
+}
+
+.input {
+  border: 1px solid rgb(213, 212, 212);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #333;
+}
+
+.spinner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-select-dropdown {
+  z-index: 2323;
+}
+
+.ant-drawer-body {
+  padding: 0 !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Montserrat';
+  src: local('Montserrat-Regular'),
+    url('../shared/media/fonts/Montserrat-Regular.ttf') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Montserrat';
+  src: local('Montserrat-Medium'),
+    url('../shared/media/fonts/Montserrat-Medium.ttf') format('woff2');
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: 'Montserrat';
+  src: local('Montserrat-SemiBold'),
+    url('../shared/media/fonts/Montserrat-SemiBold.ttf') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Montserrat';
+  src: local('Montserrat-Bold'),
+    url('../shared/media/fonts/Montserrat-Bold.ttf') format('woff2');
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: 'Montserrat';
+  src: local('Montserrat-ExtraBold'),
+    url('../shared/media/fonts/Montserrat-ExtraBold.ttf') format('woff2');
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: 'Montserrat';
+  src: local('MontserratLight'),
+    url('../shared/media/fonts/Montserrat-Black.ttf') format('woff2');
+}
+
+.ant-drawer-mask {
+  background: none !important;
+}
+
+.ant-drawer-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.ant-drawer-content-wrapper {
+  width: auto !important;
+}
+
+.ant-drawer-body {
+  // display: unset !important;
+  display: flex;
+}
+
+.contents {
+  // visibility: hidden;
+  width: 0;
+  transition: 0.5s ease;
+}
+
+.contents.open {
+  // visibility: visible;
+  width: 700px;
+}
+
+.ant-steps-item-icon {
+  background-color: var(--primary-color) !important;
+  border-color: transparent !important;
+}
+
+.ant-steps-icon {
+  color: var(--white) !important;
+}
+
+:where(.css-dev-only-do-not-override-djtmh8).ant-steps
+  .ant-steps-item-wait
+  .ant-steps-item-icon {
+  background-color: rgb(212, 209, 209) !important;
+}
+
+.css-gqp4xl-MuiPickersLayout-root .MuiPickersLayout-toolbar {
+  display: none;
+}
+
+.css-gqp4xl-MuiPickersLayout-root {
+  @include md {
+    min-width: 100% !important;
+  }
+}
+
+.MuiPickersLayout-root {
+  width: 100% !important;
+}
+
+.css-1wy8uaa-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background-color: var(--primary-color) !important;
+}
+
+.MuiDialogActions-root {
+  display: none !important;
+}
+
+.ant-picker-date-panel {
+  color: var(--primary-color) !important;
+}
+
+.ant-steps {
+  padding: 0 60px;
+}
+
+.update-review {
+  border: 1px solid var(--border-color2);
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    background-color: var(--secondary-color-two);
+    color: var(--white);
+  }
+}
+
+.yxmap_ {
+  border: 2px solid var(--border-color2);
+}
+
+.cancel-btn {
+  border: 1px solid var(--border-color2);
+  padding: 7px 20px;
+  color: var(--white);
+  transition: 0.2s all ease;
+  &:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+}
+
+hr {
+  color: var(--border-color);
+}

@@ -1,0 +1,11 @@
+.delete {
+  button {
+    cursor: pointer;
+    border: 1px solid var(--border-color2);
+    transition: 0.2s all ease;
+    &:hover {
+      background-color: rgba(252, 0, 0, 0.7);
+      color: var(--white);
+    }
+  }
+}

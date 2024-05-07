@@ -1,0 +1,15 @@
+.best-deals {
+  .best-cards {
+    @include lg {
+      overflow-x: auto;
+    }
+  }
+  .card_ {
+    background-color: transparent;
+    .card-content {
+      @include lg {
+        width: 200px;
+      }
+    }
+  }
+}

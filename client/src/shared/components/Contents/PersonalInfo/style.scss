@@ -1,0 +1,23 @@
+.personalContent {
+  .personalInfo {
+    border: 1px solid var(--border-color);
+    form button {
+      cursor: pointer;
+      transition: 0.5s all ease-in;
+      &:hover {
+        background-color: var(--secondary-color);
+      }
+    }
+  }
+  .personInput {
+    border-bottom: 1px solid var(--border-color2);
+  }
+  .label {
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+
+  hr {
+    color: var(--border-color);
+  }
+}

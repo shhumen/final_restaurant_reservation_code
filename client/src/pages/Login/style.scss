@@ -1,0 +1,31 @@
+.ath-container {
+  .drawer {
+    width: 400px;
+  }
+}
+
+.ant-drawer-content {
+  @include md {
+    // width: 300px !important;
+  }
+}
+
+// form {
+// }
+
+@include md {
+  .form-element {
+    width: 450px;
+  }
+  .form-btn {
+    width: 450px;
+  }
+}
+@include sm {
+  .form-element {
+    width: 300px;
+  }
+  .form-btn {
+    width: 300px;
+  }
+}

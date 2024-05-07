@@ -1,0 +1,51 @@
+@mixin button($width: null, $padding: null, $bgcolor: null, $color: null) {
+  border: none;
+  width: $width;
+  background-color: $bgcolor;
+  padding: $padding;
+  color: $color;
+  cursor: pointer;
+}
+
+@mixin input($padding: null, $color: black, $b-radius: 0) {
+  border: none;
+  padding: $padding;
+  color: $color;
+
+  background-color: transparent;
+  border-radius: $b-radius;
+}
+
+$breakpoints: (
+  'xs': 0,
+  'sm': 475px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+);
+
+@mixin xs {
+  @media (max-width: map-get($breakpoints,'xs')) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: map-get($breakpoints,'sm')) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: map-get($breakpoints,'md')) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (max-width: map-get($breakpoints,'lg')) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (max-width: map-get($breakpoints,'xl')) {
+    @content;
+  }
+}

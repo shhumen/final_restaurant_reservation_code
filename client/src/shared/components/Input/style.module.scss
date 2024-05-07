@@ -1,0 +1,10 @@
+@import '@/styles/variables.scss';
+
+.input {
+  border-radius: calc($base-size-xs);
+  width: 100%;
+  padding: $base-size-sm 16px;
+  border: 1px solid #dddddd;
+  color: #a09f9f;
+  outline: none;
+}

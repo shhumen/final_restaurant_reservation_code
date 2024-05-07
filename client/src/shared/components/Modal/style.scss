@@ -1,0 +1,22 @@
+.create {
+  background-color: var(--primary-color);
+  font-weight: 500;
+  &:hover {
+    background-color: var(--primary-color) !important;
+    opacity: 0.8;
+  }
+}
+
+.ant-modal-title {
+  font-size: 25px !important;
+  font-weight: 500 !important;
+}
+
+.cancel {
+  font-weight: 500;
+  &:hover {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    opacity: 0.8;
+  }
+}

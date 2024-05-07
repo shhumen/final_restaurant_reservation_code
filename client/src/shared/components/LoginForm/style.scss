@@ -1,0 +1,10 @@
+.register-restaurant {
+  &:hover {
+    color: var(--secondary-color);
+    border-bottom: 1px solid gray;
+  }
+}
+
+.role-checkbox {
+  visibility: hidden;
+}

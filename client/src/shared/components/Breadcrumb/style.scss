@@ -1,0 +1,9 @@
+.restaurant {
+  :where(.css-dev-only-do-not-override-djtmh8).ant-breadcrumb a:hover {
+    color: var(--primary-color);
+  }
+  .breadcrumb .ant-breadcrumb ol li .ant-breadcrumb-link,
+  .breadcrumb .ant-breadcrumb ol li .ant-breadcrumb-link svg {
+    color: var(--primary-color);
+  }
+}

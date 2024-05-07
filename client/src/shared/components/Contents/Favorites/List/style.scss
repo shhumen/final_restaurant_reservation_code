@@ -1,0 +1,31 @@
+.list-card {
+  .updated {
+    flex-wrap: wrap;
+    font-size: 11px;
+  }
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+  .list-image {
+    background-color: rgb(238, 246, 245);
+    img {
+      width: 45px;
+    }
+  }
+}
+
+.addRestaurant,
+.remove_restaurant {
+  cursor: pointer;
+}
+
+.remove_restaurant {
+  width: 100%;
+  // border: 1px solid var(--secondary-color-two);
+  // border-bottom: 1px solid var(--secondary-color-two);
+  // border-right: 1px solid var(--secondary-color-two);
+  // border-left: 1px solid var(--secondary-color-two);
+}

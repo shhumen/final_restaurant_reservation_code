@@ -1,0 +1,37 @@
+.header {
+  @include lg {
+    position: unset;
+    padding: 15px 0;
+  }
+  height: 95px;
+  top: -1px;
+  z-index: 23;
+  background-color: var(--white);
+  box-shadow: 0px 5px 14px 0px rgba(8, 15, 52, 0.04);
+  .search {
+    padding-right: 10px;
+    padding-left: 10px;
+    @include xl {
+      width: 90%;
+    }
+    @include lg {
+      display: none;
+    }
+  }
+  .searchContainer {
+    border: 1px solid var(--table-bg-color);
+  }
+
+  .Profile,
+  .Login {
+    @include button($bgcolor: var(--primary-color));
+    border-radius: 8px;
+    height: 35px;
+    padding: 0 20px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      opacity: 0.7;
+      background-color: var(--primary-color) !important;
+    }
+  }
+}

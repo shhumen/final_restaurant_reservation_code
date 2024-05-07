@@ -1,0 +1,47 @@
+.services {
+  .card_ {
+    display: block;
+    text-align: center;
+    margin: 25px 30px;
+    @include md {
+      text-align: center;
+    }
+    @include sm {
+      text-align: center;
+    }
+    background-color: transparent;
+    .card-content {
+      display: block;
+      .card-img img {
+        @include md {
+          width: 40px;
+          height: 40px;
+        }
+        @include sm {
+          width: 30px;
+          height: 30px;
+        }
+        width: 50px;
+        height: 50px;
+      }
+      .card-title h4 {
+        @include sm {
+          font-size: 15px;
+        }
+        @include md {
+          font-size: 16px;
+        }
+        font-size: 18px;
+      }
+      .card-text {
+        @include sm {
+          font-size: 13px;
+        }
+        @include md {
+          font-size: 14px;
+        }
+        font-size: 16px;
+      }
+    }
+  }
+}

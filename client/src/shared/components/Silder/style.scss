@@ -1,0 +1,13 @@
+.slider-container {
+  overflow: hidden;
+  .card_ {
+    padding: 30px;
+  }
+  .slick-prev {
+    left: 20px;
+    z-index: 2323;
+  }
+  .slick-next {
+    right: 20px;
+  }
+}
