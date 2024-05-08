@@ -36,7 +36,10 @@ const FavList: React.FC<FavListProps> = ({ restaurantId, list }) => {
 
   return (
     <>
-      <div onClick={restaurantId && addRestaurantToList} className='list-card'>
+      <div
+        onClick={restaurantId ? addRestaurantToList : undefined}
+        className='list-card'
+      >
         <div className='list-image py-2 d-flex justify-center'>
           <img src={favstar} alt='favorite' />
         </div>
