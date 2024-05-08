@@ -79,7 +79,7 @@ const ReservationCard: React.FC<ReservationCardProps> = ({ restaurantId }) => {
             )}
             {step === 3 && selectedTime && (
               <div className='people-picker'>
-                <h2 className='fw-400 mx-1 mt-2'> Choose your time</h2>
+                <h2 className='fw-400 mx-1 mt-2'> The count of your guests</h2>
                 <div className='people-buttons'>
                   {peopleOptions.map((people: any) => (
                     <button
