@@ -1,7 +1,6 @@
 import React from 'react'
 import PersonalInfo from './PersonalInfo'
 import { IUserProfile } from '@/shared/models'
-import Yums from './Yums'
 import Favorites from './Favorites'
 import ReviewOfUser from './ReviewsUser'
 import { useGetReviewOfUserQuery } from '@/redux/api/reviews'

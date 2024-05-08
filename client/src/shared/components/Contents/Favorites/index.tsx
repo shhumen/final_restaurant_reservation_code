@@ -20,11 +20,9 @@ const Favorites: React.FC<FavoritesProps> = ({ profile, setOpen }) => {
   const { data: favLists } = useGetFavListsQuery(profile?.user?._id)
   const [addlist] = useAddListMutation()
 
-  const {
-    control,
-    getValues,
-    formState: { errors },
-  } = useForm<IListCreate>({ resolver: zodResolver(createFavListSchema) })
+  const { control, getValues } = useForm<IListCreate>({
+    resolver: zodResolver(createFavListSchema),
+  })
 
   const hanldeOnOk = () => {
     addlist({
