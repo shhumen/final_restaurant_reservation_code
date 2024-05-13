@@ -68,8 +68,6 @@ const Reviews: React.FC<ReviewsProps> = ({ restaurant }) => {
     )
   }
 
-  console.log(commentsWithUserInfo)
-
   return (
     <div className='reviews'>
       <h1 className='fw-600 my-2'>Reviews</h1>

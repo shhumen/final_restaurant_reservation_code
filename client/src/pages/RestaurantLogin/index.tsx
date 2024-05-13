@@ -13,8 +13,6 @@ const RestaurantLogin = () => {
     resolver: zodResolver(restaurantRegisterSchema),
   })
 
-  console.log(getValues())
-
   const onSubmit = (data: any) => {
     console.log(data)
   }

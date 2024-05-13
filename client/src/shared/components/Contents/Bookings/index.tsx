@@ -20,7 +20,6 @@ const Booking: React.FC<BookingProps> = ({ profile }) => {
     (reserv: any) => reserv?.userId === profile?.user?._id
   )
 
-  console.log(myReservations)
   const handleCancelReservation = (reservationId: string) => {
     updateReservation({
       reservationId,
