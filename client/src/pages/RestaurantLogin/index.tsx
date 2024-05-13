@@ -8,7 +8,6 @@ const RestaurantLogin = () => {
     control,
     handleSubmit,
     formState: { errors },
-    getValues,
   } = useForm<RegisterRestaurantForm>({
     resolver: zodResolver(restaurantRegisterSchema),
   })
