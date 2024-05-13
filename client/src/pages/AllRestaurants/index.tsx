@@ -31,8 +31,6 @@ const AllRestaurants: React.FC = () => {
     (restaurant: IRestaurant) => restaurant?.address?.street
   )
 
-  console.log(addresses)
-
   return (
     <section className='container'>
       <h1 className='fw-600 text-center mt-3 mb-2 text-dark'>
